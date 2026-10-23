@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button layoutX="522.0" layoutY="299.0" mnemonicParsing="false" onAction="#up" text="U" />
+      <Button layoutX="522.0" layoutY="359.0" mnemonicParsing="false" onAction="#down" text="D" />
+      <Button layoutX="551.0" layoutY="329.0" mnemonicParsing="false" onAction="#right" text="R" />
+      <Button layoutX="495.0" layoutY="329.0" mnemonicParsing="false" onAction="#left" text="L" />
+      <Circle fx:id="myCircle" fill="DODGERBLUE" layoutX="300.0" layoutY="212.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="titleLabel" layoutX="1.0" layoutY="14.0" prefHeight="17.0" prefWidth="600.0" text="Circle Game" />
+      <Label fx:id="levelLabel" layoutX="2.0" layoutY="52.0" prefHeight="17.0" prefWidth="600.0" text="Level 1" />
+      <Button layoutX="14.0" layoutY="347.0" mnemonicParsing="false" onAction="#pause" prefHeight="37.0" prefWidth="73.0" text="Pause" />
+      <Label fx:id="hello" layoutX="174.0" layoutY="358.0" text="Hello: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WebController">
+   <children>
+      <WebView fx:id="webView" layoutY="93.0" prefHeight="308.0" prefWidth="600.0" />
+      <TextField fx:id="searchBar" layoutX="59.0" layoutY="40.0" onAction="#loadPage" prefHeight="25.0" prefWidth="487.0" />
+      <Button fx:id="loadButton" layoutX="547.0" layoutY="40.0" mnemonicParsing="false" onAction="#loadPage" prefHeight="25.0" prefWidth="53.0" text="Load" />
+      <Button fx:id="refreshButton" layoutX="-3.0" layoutY="65.0" mnemonicParsing="false" onAction="#refreshPage" prefHeight="25.0" prefWidth="61.0" text="Refresh" />
+      <ComboBox fx:id="zoomBox" layoutX="500.0" layoutY="65.0" onAction="#zoomPage" prefHeight="25.0" prefWidth="76.0" promptText="Zoom" />
+      <Button fx:id="zoomInButton" layoutX="576.0" layoutY="65.0" mnemonicParsing="false" onAction="#zoomIn" text="+" />
+      <Button fx:id="zoomOutButton" layoutX="479.0" layoutY="65.0" mnemonicParsing="false" onAction="#zoomOut" text="-" />
+      <Button layoutX="547.0" layoutY="14.0" mnemonicParsing="false" onAction="#displayHistory" text="History" />
+      <Button fx:id="backButton" layoutX="-1.0" layoutY="40.0" mnemonicParsing="false" onAction="#back" text="&lt;-" />
+      <Button fx:id="forwardButton" layoutX="29.0" layoutY="40.0" mnemonicParsing="false" onAction="#forward" text="-&gt;" />
+      <Label fx:id="welcomeText" layoutX="40.0" layoutY="6.0" prefHeight="27.0" prefWidth="501.0" text="USERNAME" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pfp" fitHeight="32.0" fitWidth="32.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PFP1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOutButton" layoutX="487.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+   </children>
+</AnchorPane>

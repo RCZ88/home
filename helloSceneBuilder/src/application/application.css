@@ -1,0 +1,11 @@
+.root{
+	-fx-background-color:"white";
+}
+.label{
+	-fx-fontSize:30;
+	-fx-font-family:"verdana";
+	-fx-text-fill:"black";
+}
+#titleLabel{
+	-fx-font-size:30;
+}

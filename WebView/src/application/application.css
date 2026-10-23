@@ -1,0 +1,10 @@
+.Button{
+	-fx-background-color: "white";
+	-fx-text-fill: "black";
+}
+.Label{
+	-fx-text-fill:"white";
+}
+.AnchorPane{
+	-fx-background-color:"#A9A9A9";
+}
